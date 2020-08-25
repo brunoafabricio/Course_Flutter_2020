@@ -1,7 +1,7 @@
-# contador_de_pessoas
+# People Counter App
 
 This Project has developed to count(inc/dec) number of peoples in a restaurant.
 
 ## Preview
 
-![](#1App.gif)
+![](.github/preview.gif)
