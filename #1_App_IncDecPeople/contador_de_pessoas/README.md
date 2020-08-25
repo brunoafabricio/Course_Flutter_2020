@@ -2,7 +2,6 @@
 
 This Project has developed to count(inc/dec) number of peoples in a restaurant.
 
-## Getting Started
+## Preview
 
-
-
+![](#1App.gif)
