@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
+import "package:flutter/material.dart";
 
-void main(){
+void main() {
   runApp(MaterialApp(
     home: Home(),
   ));
@@ -18,6 +18,20 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: Text("IMC Calculator"),
         centerTitle: true,
+        backgroundColor: Colors.green,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.refresh),
+            onPressed: () {},
+          )
+        ],
+      ),
+      backgroundColor: Colors.white,
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Icon(Icons.person_outline, size: 120.0, color: Colors.green,)
+        ],
       ),
     );
   }
