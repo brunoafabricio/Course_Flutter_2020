@@ -1,17 +1,20 @@
-# Flutter Course 2020
+
 <img src=".github/flutter_img.jpg">
 
-## About: 
-This course contains 16 applications develop to mobile phone __Android and IOS__
+<h1 align="center"> Flutter Course 2020 </h1>
 
-## Apps:
-- OLX Clone
-- E-commerce (Client and Manager App)
+# About: 
+💻 This course contains 16 applications developed to the mobile phone __Android and IOS__
+
+# Applications developed in this course:
+
+- OLX Clone ( olx.com.br )
+- Virtual Store (Client App and Manager App) 
 - Online Chat
-- Book of contacts
+- Contact Book
 - Youtube Favorites
 - To Do List
-- Coin converter
-- Gifs Fetch
+- Coin Converter
+- Gifs Search
 - IMC Calculator
 - And More!
