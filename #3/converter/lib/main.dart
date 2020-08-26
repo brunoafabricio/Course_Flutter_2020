@@ -9,6 +9,8 @@ const request = "https://api.hgbrasil.com/finance?key=6fe065c7";
 void main() async {
   print(await getData());
   runApp(MaterialApp(
+    title: "Convert Currencies",
+    debugShowCheckedModeBanner: false,
     home: Home(),
     theme: ThemeData(
         hintColor: Colors.amber,
