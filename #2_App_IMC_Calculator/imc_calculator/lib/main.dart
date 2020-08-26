@@ -1,4 +1,4 @@
-import "package:flutter/material.dart";
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -55,7 +55,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text("IMC Calculator"),
+          title: Text("BMI Calculator"),
           centerTitle: true,
           backgroundColor: Colors.green,
           actions: <Widget>[
