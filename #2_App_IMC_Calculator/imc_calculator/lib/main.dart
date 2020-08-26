@@ -74,7 +74,7 @@ class _HomeState extends State<Home> {
               children: <Widget>[
                 Icon(Icons.person_outline, size: 120.0, color: Colors.green),
                 TextFormField(
-                  keyboardType: TextInputType.number,
+                  keyboardType: TextInputType.numberWithOptions(decimal:true),
                   decoration: InputDecoration(
                       labelText: "Peso (kg)",
                       labelStyle: TextStyle(color: Colors.green)),
