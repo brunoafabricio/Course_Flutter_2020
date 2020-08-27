@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
     if(_search == null || _search.isEmpty)
       response = await http.get("https://api.giphy.com/v1/gifs/trending?api_key=TqkBYMtVke3xrRGsqKvExJoRvLERg0pk&limit=20&rating=g");
     else
-      response = await http.get("https://api.giphy.com/v1/gifs/search?api_key=TqkBYMtVke3xrRGsqKvExJoRvLERg0pk&q=$_search&limit=20&offset=$_offset&rating=g&lang=en");
+      response = await http.get("https://api.giphy.com/v1/gifs/search?api_key=TqkBYMtVke3xrRGsqKvExJoRvLERg0pk&q=$_search&limit=19&offset=$_offset&rating=g&lang=en");
       // https://api.giphy.com/v1/gifs/search?api_key=zTZQZNz8ankZDyZXiUwSljaGhOi9Hc4r&q=$_search&limit=25&offset=$_offset&rating=G&lang=en
 
     return json.decode(response.body);
@@ -111,14 +111,14 @@ class _HomePageState extends State<HomePage> {
         padding: EdgeInsets.all(10.0),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount( //Como os itens serao organizados na tela
             crossAxisCount: 2,
-            crossAxisSpacing: 10.0, //espaçamento na horizontal
-            mainAxisSpacing: 10.0 //espaçamento na vertical
-        ),
+            crossAxisSpacing: 10.0, 
+            mainAxisSpacing: 10.0 
+            ),
         itemCount: _getCount(snapshot.data["data"]),
         itemBuilder: (context, index){
           if(_search == null || index < snapshot.data["data"].length)
             return GestureDetector(
-              child: FadeInImage.memoryNetwork(
+              child: FadeInImage.memoryNetwork( //suavizar imagens
                 placeholder: kTransparentImage,
                 image: snapshot.data["data"][index]["images"]["fixed_height"]["url"],
                 height: 300.0,
@@ -126,7 +126,7 @@ class _HomePageState extends State<HomePage> {
               ),
               onTap: (){
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => GifPage(snapshot.data["data"][index]))
+                    MaterialPageRoute(builder: (context) => GifPage(snapshot.data["data"][index])) // route
                 );
               },
               onLongPress: (){
