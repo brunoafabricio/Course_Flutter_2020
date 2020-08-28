@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:contact_book/helpers/contact_helper.dart';
 import 'package:contact_book/ui/contact_page.dart';
 import 'package:flutter/material.dart';
@@ -85,10 +84,10 @@ class _HomePageState extends State<HomePage> {
                         fit: BoxFit.cover
                     ),
                   ),
-                ),
+                ), 
                 Padding(
                   padding: EdgeInsets.only(left: 10.0),
-                  child: Column(
+                  child: Column( 
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(contacts[index].name ?? "",

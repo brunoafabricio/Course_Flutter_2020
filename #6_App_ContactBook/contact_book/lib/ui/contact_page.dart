@@ -9,7 +9,7 @@ class ContactPage extends StatefulWidget {
 
   final Contact contact;
 
-  ContactPage({this.contact}); //entre chaves parametro e opcional
+  ContactPage({this.contact});
 
   @override
   _ContactPageState createState() => _ContactPageState();
@@ -75,7 +75,7 @@ class _ContactPageState extends State<ContactPage> {
                     shape: BoxShape.circle,
                     image: DecorationImage(
                         image: _editedContact.img != null ?
-                        FileImage(File(_editedContact.img)) :
+                        FileImage(File(_editedContact.img)) : 
                         AssetImage("images/person.png"),
                         fit: BoxFit.cover
                     ),
