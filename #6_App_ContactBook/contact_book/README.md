@@ -5,7 +5,7 @@ This Project has developed to be a contact book.
 
 ## 📱 Preview
 
-![](.github/preview.gif)
+![](.github/preview.gif) ![](.github/preview2.gif) 
 
 ## 💻 Technologies 
 
