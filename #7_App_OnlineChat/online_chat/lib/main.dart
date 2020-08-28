@@ -1,21 +1,8 @@
+import 'package:online_chat/chat_screen.dart';
 import 'package:flutter/material.dart';
-
-import 'package:cloud_firestore/cloud_firestore.dart';
 
 void main() async{
   runApp(MyApp());
-
-  QuerySnapshot snapshot = await Firestore.instance.collection("mensagens").getDocuments();
-  snapshot.documents.forEach((d){
-    print(d.data);
-  });
-
-  Firestore.instance.collection("mensagens").snapshots().listen((dado) {
-    dado.documents.forEach((d){
-      print(d.data);
-    });
-  });
-
 
 }
 class MyApp extends StatelessWidget {
@@ -26,8 +13,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        iconTheme: IconThemeData(
+          color: Colors.blue,
+        )
       ),
-      home: Container(),
+      home: ChatScreen(),
     );
   }
 }
