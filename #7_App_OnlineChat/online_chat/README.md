@@ -13,5 +13,5 @@ This Project has developed to create an real time online chat
 
 ## 🧠 what I learned in this class:
 - Use Firebase like BaaS(Backend as a Service)
-- OAuth with google
+-  OAuth with google
 - create database to our applications
