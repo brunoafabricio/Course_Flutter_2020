@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "464936140329",
-    "firebase_url": "https://virtualstoreflutter-001.firebaseio.com",
-    "project_id": "virtualstoreflutter-001",
-    "storage_bucket": "virtualstoreflutter-001.appspot.com"
+    "project_number": "21539196364",
+    "firebase_url": "https://flutter-virtualstore-001.firebaseio.com",
+    "project_id": "flutter-virtualstore-001",
+    "storage_bucket": "flutter-virtualstore-001.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:464936140329:android:e02acbae8ebfb19f376638",
+        "mobilesdk_app_id": "1:21539196364:android:363f7c8e9b10fd4306e169",
         "android_client_info": {
           "package_name": "br.com.fabricio.virtualstore.virtualstore"
         }
       },
       "oauth_client": [
         {
-          "client_id": "464936140329-5hjgmobi77lkfrc4auub7d32jg07b09h.apps.googleusercontent.com",
+          "client_id": "21539196364-aihdvc63e6fk3r85k8kc7dms0u40uglb.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBh1G40SjvRYeWgxjd7dm4nTtflMx9vrTs"
+          "current_key": "AIzaSyD4xhvuSXnVqD2g8BsEn8Xr341okRLaLeU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "464936140329-5hjgmobi77lkfrc4auub7d32jg07b09h.apps.googleusercontent.com",
+              "client_id": "21539196364-aihdvc63e6fk3r85k8kc7dms0u40uglb.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
