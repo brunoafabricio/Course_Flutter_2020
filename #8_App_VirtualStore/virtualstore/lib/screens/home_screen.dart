@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:virtualstore/tabs/home_tab.dart';
+import 'package:virtualstore/widgets/custom_drawer.dart';
 
 class HomeScreen extends StatelessWidget {
 
@@ -14,7 +15,12 @@ class HomeScreen extends StatelessWidget {
       controller: _pageController,
       physics: NeverScrollableScrollPhysics(), // block swipe to side
       children: <Widget>[
-        HomeTab(),
+        Scaffold(
+          body: HomeTab(),
+          drawer:CustomDrawer(
+
+          ),
+        ),
       ]
       
     );
