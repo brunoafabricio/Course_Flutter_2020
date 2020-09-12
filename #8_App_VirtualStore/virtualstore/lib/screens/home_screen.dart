@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:virtualstore/tabs/home_tab.dart';
 
 class HomeScreen extends StatelessWidget {
 
@@ -7,15 +8,13 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    //_pageController.animateToPage(page, duration: null, curve: null) change page
+    
 
     return PageView(
       controller: _pageController,
       physics: NeverScrollableScrollPhysics(), // block swipe to side
       children: <Widget>[
-        Container(color: Colors.yellow,),
-        Container(color: Colors.red,),
-        Container(color: Colors.green,),
+        HomeTab(),
       ]
       
     );
