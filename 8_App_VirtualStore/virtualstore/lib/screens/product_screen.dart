@@ -21,6 +21,9 @@ class _ProductScreenState extends State<ProductScreen> {
 
   @override
   Widget build(BuildContext context) {
+
+    final Color primaryColor = Theme.of(context).primaryColor;
+
     return Scaffold(
       appBar: AppBar(
         title: Text(product.title),
@@ -34,9 +37,39 @@ class _ProductScreenState extends State<ProductScreen> {
               images: product.images.map((url){
                 return NetworkImage(url);
               }).toList(),
-              dotSize: ,
+              dotSize: 4.0 ,
+              dotSpacing: 15.0,
+              dotBgColor:  Colors.transparent,
+              dotColor: primaryColor,
+              autoplay: false,
+              
             ),
-          )
+          ),
+          Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Text(
+                  product.title,
+                  style: TextStyle(
+                    fontSize: 20.0, 
+                    fontWeight: FontWeight.w500,
+                  ),
+                  maxLines: 3,
+                ),
+                Text(
+                  "R\$ ${product.price.toStringAsFixed(2)}",
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold,
+                    color: primaryColor,
+                  )
+                )
+
+              ]
+            )
+          ),
         ]
       ),
     );

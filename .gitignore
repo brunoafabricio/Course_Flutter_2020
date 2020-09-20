@@ -19,5 +19,3 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
-
-8_App_VirtualStore\virtualstore\android\app\google-services.json
