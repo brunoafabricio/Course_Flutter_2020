@@ -108,7 +108,7 @@ class _ProductScreenState extends State<ProductScreen> {
                         onPressed: size != null ? () {} : null,
                         child: Text(
                           "Add to the cart",
-                          style: TextStyle(fontSize: 18.0),
+                          style: TextStyle(fontSize: 18.5),
                         ),
                         color: primaryColor,
                         textColor: Colors.white,
