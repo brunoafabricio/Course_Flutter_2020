@@ -15,3 +15,4 @@ This Project has developed to create an real time online chat
 - How to use a BaaS (back-end as a service)
 - Howe to use OAuth to authenticate with google
 - How to create database to our applications
+- Should have protected application keys
